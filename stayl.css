@@ -1,0 +1,93 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#141e30,#243b55);
+    color:white;
+}
+
+/* HEADER */
+
+header{
+    text-align:center;
+    padding:60px 20px;
+}
+
+header h1{
+    font-size:42px;
+    margin-bottom:10px;
+    color:#00f2fe;
+    text-shadow:0 0 20px #00f2fe;
+}
+
+/* CONTAINER */
+
+.container{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+    padding:40px 5%;
+}
+
+/* 3D CARD */
+
+.card{
+    width:350px;
+    padding:30px;
+    border-radius:20px;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(10px);
+    box-shadow:0 20px 40px rgba(0,0,0,0.5);
+    transform: perspective(1000px) rotateY(0deg);
+    transition:transform 0.6s ease, box-shadow 0.6s ease;
+}
+
+.card:hover{
+    transform: perspective(1000px) rotateY(15deg) rotateX(10deg);
+    box-shadow:0 30px 60px rgba(0,255,255,0.5);
+}
+
+/* IMAGES */
+
+.book-img{
+    width:160px;
+    display:block;
+    margin:20px auto;
+    border-radius:12px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.4);
+}
+
+.class-img{
+    width:100%;
+    border-radius:15px;
+    margin:20px 0;
+    box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+.card h2{
+    text-align:center;
+    margin-bottom:15px;
+    color:#00f2fe;
+}
+
+ul{
+    padding-left:20px;
+}
+
+li{
+    margin-bottom:8px;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+    background:rgba(0,0,0,0.4);
+}
